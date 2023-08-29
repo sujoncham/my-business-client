@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  {
+    /* #d7e23c  #ff9a1f #ff8521 #a4df56  #00954a*/
+  }
   return (
     <header className="bg-[#00954a] py-5">
       <div className="container mx-auto px-10 flex justify-between items-center">
@@ -8,7 +11,6 @@ const Header = () => {
           <img src={""} alt="My Business" />
         </div>
         <nav>
-          {/* #d7e23c  #ff9a1f #ff8521 #a4df56  #00954a*/}
           <ul className="flex justify-start gap-5 text-[#d7e23c] uppercase font-bold">
             <li>
               <Link to="/">Home</Link>
