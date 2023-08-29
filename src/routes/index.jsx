@@ -3,6 +3,7 @@ import App from "../App";
 import About from "../pages/About";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
+import Page404 from "../pages/Page404";
 import Register from "../pages/Register";
 import Services from "../pages/Services";
 
@@ -29,6 +30,10 @@ const routes = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "*",
+    element: <Page404 />,
   },
 ]);
 
