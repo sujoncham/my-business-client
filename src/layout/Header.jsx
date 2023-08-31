@@ -5,7 +5,7 @@ const Header = () => {
     /* #d7e23c  #ff9a1f #ff8521 #a4df56  #00954a*/
   }
   return (
-    <header className="bg-[#00954a] py-5">
+    <header className="bg-[#00954a] py-5 sticky top-0 z-40">
       <div className="container mx-auto px-10 flex justify-between items-center">
         <div className="logo">
           <img src={""} alt="My Business" />
@@ -22,10 +22,16 @@ const Header = () => {
               <Link to="/services">Services</Link>
             </li>
             <li>
+              <Link to="/galleries">Galleries</Link>
+            </li>
+            <li>
+              <Link to="/applicantList">ApplicantList</Link>
+            </li>
+            <li>
               <Link to="/login">Login</Link>
             </li>
             <li>
-              <Link to="/register">Register</Link>
+              <Link to="/profile">Profile</Link>
             </li>
           </ul>
         </nav>

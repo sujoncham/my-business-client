@@ -1,6 +1,10 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
+import ApplicantDetail from "../components/ApplicantDetail";
+import Profile from "../components/Profile";
 import About from "../pages/About";
+import ApplicantList from "../pages/ApplicantList";
+import Galleries from "../pages/Galleries";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Page404 from "../pages/Page404";
@@ -21,6 +25,22 @@ const routes = createBrowserRouter([
         path: "/services",
         element: <Services />,
       },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
+      {
+        path: "/galleries",
+        element: <Galleries />,
+      },
+      {
+        path: "/applicantList",
+        element: <ApplicantList />,
+      },
+      {
+        path: "/applicantDetail",
+        element: <ApplicantDetail />,
+      },
     ],
   },
   {
@@ -30,6 +50,14 @@ const routes = createBrowserRouter([
   {
     path: "/register",
     element: <Register />,
+  },
+  {
+    path: "/applicantList",
+    element: <ApplicantList />,
+  },
+  {
+    path: "/applicantDetail",
+    element: <ApplicantDetail />,
   },
   {
     path: "*",

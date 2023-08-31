@@ -1,4 +1,10 @@
+import { Link, useNavigate } from "react-router-dom";
+
 const Login = () => {
+  const navigate = useNavigate();
+  const handleSubmit = () => {
+    navigate("/");
+  };
   return (
     <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
       <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -13,7 +19,7 @@ const Login = () => {
       </div>
 
       <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form className="space-y-6" action="#" method="POST">
+        <form className="space-y-6" onSubmit={handleSubmit}>
           <div>
             <label
               htmlFor="email"
@@ -74,12 +80,12 @@ const Login = () => {
 
         <p className="mt-10 text-center text-sm text-gray-500">
           Not a member?{" "}
-          <a
-            href="#"
+          <Link
+            to="/register"
             className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
           >
-            Start a 14 day free trial
-          </a>
+            create account
+          </Link>
         </p>
       </div>
     </div>

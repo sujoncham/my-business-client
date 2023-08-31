@@ -17,7 +17,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 2,
     title: "Boost your conversion rate",
     href: "#",
     description:
@@ -34,7 +34,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 3,
     title: "Boost your conversion rate",
     href: "#",
     description:
@@ -51,7 +51,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 4,
     title: "Boost your conversion rate",
     href: "#",
     description:
@@ -68,7 +68,7 @@ const posts = [
     },
   },
   {
-    id: 1,
+    id: 5,
     title: "Boost your conversion rate",
     href: "#",
     description:
@@ -91,7 +91,7 @@ const Blog = () => {
     <div className="bg-white py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-bold tracking-tight text-[#00954a] sm:text-4xl">
             From the blog
           </h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
@@ -110,13 +110,13 @@ const Blog = () => {
                 </time>
                 <a
                   href={post.category.href}
-                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
+                  className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-[#00954a] hover:bg-gray-100"
                 >
                   {post.category.title}
                 </a>
               </div>
               <div className="group relative">
-                <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <h3 className="mt-3 text-lg font-semibold leading-6 text-[#ff9a1f] group-hover:text-[#00954a]">
                   <a href={post.href}>
                     <span className="absolute inset-0" />
                     {post.title}
