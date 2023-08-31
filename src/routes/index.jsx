@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import ApplicantDetail from "../components/ApplicantDetail";
+import BioForm from "../components/BioForm";
 import Profile from "../components/Profile";
 import About from "../pages/About";
 import ApplicantList from "../pages/ApplicantList";
+import CareerJob from "../pages/CareerJob";
 import Galleries from "../pages/Galleries";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
@@ -58,6 +60,14 @@ const routes = createBrowserRouter([
   {
     path: "/applicantDetail",
     element: <ApplicantDetail />,
+  },
+  {
+    path: "/careerJob",
+    element: <CareerJob />,
+  },
+  {
+    path: "/bioForm",
+    element: <BioForm />,
   },
   {
     path: "*",

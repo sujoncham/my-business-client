@@ -81,7 +81,7 @@ const ApplicantList = () => {
               <p className="text-sm leading-6 text-gray-900">{person.role}</p>
               <Link
                 to={"/applicantDetail"}
-                className="border-2 border-green-600 px-2 py-1 rounded-md"
+                className="border-2 border-green-600 px-2 py-1 rounded-md hover:bg-orange-400"
               >
                 view
               </Link>
